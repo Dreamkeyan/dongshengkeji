@@ -1,0 +1,89 @@
+<include file='Public:header' />
+<title>东升科技--荣誉</title>
+<include file='Public:header_column' />
+	<div class="banner02"><img src="__PUBLIC__/images/banner10.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+</div>
+	
+<div class="mainBody">
+	<div class="inc_tit">
+		<h3 id="timeShow" name="timeShow"></h3>
+<script language="javascript">
+window.onload = disptime;
+</script>
+		<p class="fr"><a href="index.jsp.html">首页</a> &gt; <span class="redf02">荣誉</span></p>
+	</div>
+	<div class="mainL03">
+			<div class="mtit02">荣誉</div>
+			<div class="menuBox">
+				<foreach name='cultureColumn' item='inclumn'>
+	
+					<if condition='($inclumn["name"] eq $clo["name"])'>
+						<div class="menuBar01"><a href="{:U('hornor',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+					<else />
+						<div class="menuBar02"><a href="{:U('hornor',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+					</if>
+					
+				</foreach>
+			</div>
+			<div class="menuBottom"></div>
+			
+			<div class="mLbox">
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<foreach name='newslist' item='news'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+		<?php
+			echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+		</a><br/>
+	</foreach>	
+</div>
+			</div>
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+            
+            
+			
+		</div>
+		
+		
+		
+		<div class="mainR03">
+			<div class="inc_Rtit"><h4>{$clo['name']}</h4></div>
+			<!-- 荣誉资质 -->
+			<if condition='$clo["id"] eq 49'>
+				
+				<foreach name='ryList' item='ry'>
+					
+					<div class="glo_picbg"><a href="<?php
+					   echo substr($ry['litpic'],0,strpos($ry['litpic'],'!'));
+					?>"><img src="{$ry['litpic']}" width="151" height="106"/></a></div>
+				</foreach>
+			<else />
+				<div class="clearit">
+					<foreach name='list' item='ll'>
+						<div class="user">
+						     <img src="{$ll['litpic']}" width="127" height="92"  class="img_left"/>
+						     <div class="user_text">
+						     <span class="t_red"><a href="{:U('pjDetail',array('id'=>$ll['id']))}">{$ll['title']}</a></span><br/>
+						     {$ll['title']}
+						     </div>
+					     </div>
+					</foreach>
+				</div>
+				<div class="inc_page">
+					{$page}
+				</div>
+			</if>
+			
+		</div>
+	</div>
+
+
+<include file='Public:footer' />

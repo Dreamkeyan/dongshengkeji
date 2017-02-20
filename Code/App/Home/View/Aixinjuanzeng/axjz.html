@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<input id="enterpriseAccountI" name="enterpriseAccountI" type="hidden" value="2966169" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="Author" Content="" />
+<meta name="Copyright" Content="" />
+
+<script src="__PUBLIC__/js/scroll-door.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/jquery.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/common.js" type="text/javascript"></script>
+<title>东升科技-爱心捐助</title>
+<link href="__PUBLIC__/css/main1.css" rel="stylesheet" type="text/css" />
+<include file='Public:header_column' />
+		
+		<div class="banner02"><img src="__PUBLIC__/images/asjz.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+	</div>	
+	<div class="mainBody">
+		<div class="inc_tit">
+			<h3 id="timeShow" name="timeShow"></h3>
+			<script language="javascript">
+			window.onload = disptime;
+			</script>
+			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">爱心捐助</span></p>
+		</div>
+		
+		
+		<div class="mainL02">
+		  <div class="govBox">
+			  <div class="mtit01">
+                <h1 class="tabbg01">爱心捐助</h1>
+                
+	      </div>
+     <div class="govCont">
+
+		<foreach name='list' item='ll'>
+			<div class="pictxt">
+				 <p class="imgBorder"><img src="{$ll['litpic']}" width="105" height="75" /></p>
+				 <div class="textinfo_1">
+					<h2><a href="{:U('detail',array('id'=>$ll['id']))}">{$ll['title']}</a></h2>
+				        <p>{$ll['title']}...[<a class="redf02" href="{:U('detail',array('id'=>$ll['id']))}">详细</a>]</p>
+				</div>
+			</div>
+		</foreach>
+
+
+
+		<div class="inc_page">
+			{$page}
+		</div>
+   		 		
+			     
+			    
+				
+            </div>
+		  </div>
+			<div style="clear:both"></div>
+			
+	  </div>
+		<div class="mainR02">
+			
+				
+<div class="imgbox">
+	<include file='Public:right_column' />
+</div>
+
+            
+            
+			
+			<div class="mRbox">
+				
+				
+
+
+
+
+
+
+
+
+<div class="mtit01">
+	<h1>典型案例</h1>
+	<p><a href="{:U('dianxinganli/anllist')}" target="_blank">更多>></a></p>
+</div>
+
+<div class="picWrap02">
+	<foreach name='dxanl' item='anl'>
+		<p class="picbox02">
+		<a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}" target="_blank"><img src="{$anl['litpic']}" width="149" height="108" border="0"/></a>
+		</p>
+		<b><a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}">{$anl['title']}</a></b>
+	</foreach>
+</div>
+
+
+			
+   		 		
+			     
+			</div>
+			
+		</div>
+		
+		
+	</div>
+
+
+<include file='Public:footer' />

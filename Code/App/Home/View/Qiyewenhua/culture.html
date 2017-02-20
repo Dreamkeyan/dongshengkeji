@@ -1,0 +1,110 @@
+<include file='Public:header' />
+<title>东升科技-企业文化</title>
+<include file='Public:header_column' />
+		<div class="banner02"><img src="__PUBLIC__/images/banner07.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+	</div>
+	
+	
+	<div class="mainBody">
+		<div class="inc_tit">
+			<h3 id="timeShow" name="timeShow"></h3>
+			<script language="javascript">
+	        	window.onload = disptime;
+			</script>
+			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <a href="{:U('culture')}">企业文化</a> &gt; <span class="redf02">{$clo['name']}</span></p>
+		</div>
+		
+		<div class="mainL03">
+			
+				<div class="mtit02">企业文化</div>
+<div class="menuBox">
+	<foreach name='cultureColumn' item='inclumn'>
+	
+		<if condition='($inclumn["name"] eq $clo["name"])'>
+			<div class="menuBar01"><a href="{:U('culture',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+		<else />
+			<div class="menuBar02"><a href="{:U('culture',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+		</if>
+		
+	</foreach>
+</div>
+<div class="menuBottom"></div>
+			<div class="mLbox">
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<foreach name='newslist' item='news'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+		<?php
+			echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+		</a><br/>
+	</foreach>	
+</div>
+			</div>
+			
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+		</div>
+		<div class="mainR03">
+			<if condition='$clo["name"] eq "优秀员工"'>
+				<div class="clearit04">
+					<div class="clearit_out">
+						<div class="inc_Rtit"><h4>{$ygColumn[0]['name']}</h4></div>
+							<div class="clearit04">
+								<foreach name='ygList' item='yglist' key='k'>
+									<div class="personInfo">
+										<p class="imgBorder"><img src="{$yglist['litpic']}" width="76" height="114" /></p>
+										<p><b>{$yglist['title']}</b></p>
+										<p class="a_l"></p>
+									</div>
+								</foreach>
+									
+							</div>
+	                </div>
+					<div class="personList">
+						<foreach name='ygColumn' item='yg'> 
+							·<a href="{:U('culture',array('cid'=>'46','pid'=>$yg['id']))}">{$yg['name']}</a><br />
+						</foreach>
+					</div>
+				</div>
+			 <elseif condition='$clo["name"] eq "员工天地"' />
+ 					<div class="inc_Rtit"><h4>{$clo['name']}</h4></div>
+					<ul class="ul_list">
+						<foreach name='list' item='ll'>
+							<li class="ul_li585"><a href="{:U('ygtdDetail',array('id'=>$ll['id']))}" title="{$ll['title']}">·{$ll['title']}</a></li>
+							<li class="ul_li75"><?php
+								echo date('Y-m-d',$ll['publishtime']);
+							?> </li>
+						</foreach>
+						
+					</ul>
+					<div class="inc_page">
+						{$page}
+					</div>
+			 <else />
+			 	<div class="inc_Rtit"><h4>{$clo['name']}</h4></div>
+				<div class="txtBox03">
+					{$clo['content']}
+		        </div>
+			 </if>
+			 <div class="clearit03 mar_top15">
+			 
+			 <div class="inc_Rtit02">精典回顾</div>
+
+
+</div>
+
+<div class="inc_page02">
+</div>
+<div class="space26">
+	
+</div>
+		</div>
+	</div>
+
+<include file='Public:footer' />	

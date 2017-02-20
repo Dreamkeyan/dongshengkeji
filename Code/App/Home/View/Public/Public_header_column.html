@@ -1,0 +1,24 @@
+</head>
+<body>
+	<div class="header">
+		
+    		
+<div class="topWrap">
+	<div class="topMenu"><p><a style="cursor:pointer;" onclick="SetHome(this,'http://www.86good.com:80//2966169/web');">设为首页</a>&nbsp;|&nbsp;<a style="cursor:pointer;" onclick="AddFavorite('/2966169/web','东升科技');">添加收藏</a></p></div>
+	<div class="topNav">
+		<a href="">首页</a>
+		<a href="intro.jsp/en=intro.html">公司简介</a>
+		<a href="product.jsp.html">产品介绍</a>
+		<a href="ywfw.jsp/typeName=ztjfsjysg.html">业务范围</a>
+		<a href="column_case.jsp.html">典型案例</a>
+		<a href="column_news.jsp.html">资讯动态</a>
+		<a href="culture.jsp/en=about_us.html">企业文化</a>
+		<a href="hornor_certificate.jsp.html">荣誉</a>
+		<a href="axjz.jsp.html">爱心捐助</a> 
+		<a href="recruit.jsp/en=recruit.html">招聘英才</a> 
+	</div>
+</div>
+<script language="javascript">
+	function AddFavorite(sURL, sTitle){try{window.external.addFavorite(sURL, sTitle);}catch (e){try{window.sidebar.addPanel(sTitle, sURL, "");}catch (e){alert("加入收藏失败，请使用Ctrl+D进行添加");}}}
+	function SetHome(obj,vrl){try{obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);}catch(e){if(window.netscape) {try {netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");}catch (e) {alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");}var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);prefs.setCharPref('browser.startup.homepage',vrl);}}}
+</script>

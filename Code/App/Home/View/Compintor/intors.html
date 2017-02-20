@@ -1,0 +1,72 @@
+<include file='Public:header' />
+<title>东升科技-公司简介</title>
+<include file='Public:header_column' />
+		<div class="banner02"><img src="__PUBLIC__/images/banner05.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+	</div>
+	
+	<div class="mainBody">
+		<div class="inc_tit">
+			<h3 id="timeShow" name="timeShow"></h3>
+			<script language="javascript">
+        		window.onload = disptime;
+			</script>
+			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <a href="{:U('intor')}">公司简介</a> &gt; <span class="redf02">{$clo['name']}</span></p>
+		</div>
+		
+		<div class="mainL03">
+			
+			
+<div class="mtit02">公司简介</div>
+<div class="menuBox">
+	
+	<foreach name='intorColumn' item='inclumn'>
+	
+		<if condition='($inclumn["name"] eq $clo["name"])'>
+			<div class="menuBar01"><a href="{:U('intors',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+		<else />
+			<div class="menuBar02"><a href="{:U('intors',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+		</if>
+		
+	</foreach>	
+
+</div>
+<div class="menuBottom"></div>
+			<div class="mLbox">
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	
+		<foreach name='newslist' item='news'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+		<?php
+			echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+		</a><br/>
+	</foreach>	
+	
+</div>
+
+			    				
+			</div>
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+		</div>
+		
+		<div class="mainR03">
+			<div class="inc_Rtit"><h4>{$clo['name']}</h4></div>
+			<div class="txtBox03">
+				
+				{$clo['content']}
+	
+			</div>
+		</div>
+		
+	</div>
+
+
+<include file='Public:footer' />

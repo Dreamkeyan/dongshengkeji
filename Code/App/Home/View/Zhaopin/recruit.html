@@ -1,0 +1,113 @@
+<include file='Public:header' />
+<title>东升科技--招聘英才</title>
+<include file='Public:header_column' />
+
+<div class="banner02"><img src="__PUBLIC__/images/banner09.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+</div>
+	
+<div class="mainBody">
+	<div class="inc_tit">
+		<h3 id="timeShow" name="timeShow"></h3>
+<script language="javascript">
+window.onload = disptime;
+</script>
+		<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">{$clo['name']}</span></p>
+	</div>
+	<div class="mainL03">
+		<div class="mtit02">招聘英才</div>
+		<div class="menuBox">
+			<foreach name='intorColumn' item='inclumn'>
+	
+				<if condition='($inclumn["name"] eq $clo["name"])'>
+					<div class="menuBar01"><a href="{:U('recruit',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+				<else />
+					<div class="menuBar02"><a href="{:U('recruit',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+				</if>
+				
+			</foreach>	
+		</div>
+			
+		<div class="mLbox">
+			
+					
+
+
+
+
+
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	
+		<foreach name='newslist' item='news'>
+			·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+			<?php
+				echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+			</a><br/>
+		</foreach>	
+</div>
+
+		</div>
+			
+		
+			
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+        
+        
+			
+	</div>
+			
+		
+	<div class="mainR03 bspace15">
+		<div class="inc_Rtit"><h4>{$clo['name']}</h4></div>
+			<if condition='$clo["id"] eq "54"'>
+				<div class="txtBox03">
+					{$clo['content']}
+				</div>
+			<else />
+			<foreach name='list' item='zhaopin'>	
+	        	<div class="recruit_tit">
+					<p class="fl">招聘职位：<span>{$zhaopin['gangwei']}</span></p>
+					<p class="fr"><input type="button" class="btn" value="" onclick="window.location.href='mailto:dongsheng_hr@126.com';"/></p>
+				</div>
+				
+				<table cellpadding="0" cellspacing="0" class="recruit_table">
+					<tr>
+						<td width="13%" valign="top" class="tdbg01">招聘人数</td>
+						<td width="37%">{$zhaopin['num']}</td>
+					<td width="13%" valign="top" class="tdbg01">工作地点</td>
+					<td>{$zhaopin['address']}</td>
+				</tr>
+				<tr>
+					<td valign="top" class="tdbg01">工资待遇</td>
+					<td>{$zhaopin['gongzi']}</td>
+					<td valign="top" class="tdbg01">发布时间</td>
+					<td>{$zhaopin['addtime']}</td>
+				</tr>
+				<tr>
+					<td valign="top" class="tdbg01">有效期限</td>
+					<td>{$zhaopin['timeover']}</td>
+					<td valign="top" class="tdbg01">联系方式</td>
+					<td>{$zhaopin['information']}</td>
+				</tr>
+				<tr>
+					<td valign="top" class="tdbg01">招聘要求</td>
+					<td colspan="3">
+						{$zhaopin['info']}
+					</td>
+					</tr>
+				</table>
+			</foreach>
+			</if>
+	</div>
+			
+</div>
+
+<include file='Public:footer' />

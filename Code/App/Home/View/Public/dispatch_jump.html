@@ -1,0 +1,31 @@
+<include  file='Public:originheader'/>    
+<body>
+    <header>
+        <div class="header_color">
+            <a class="back" href="javascript:window.history.go(-1);"><img  src="__ROOT__/Asset/Mobile/img/back_icon.png"></a>
+            消息详情
+        </div>
+    </header>
+    <section class="exchange_yes">
+        <div class="container">
+            <if condition="$message neq null" >
+                <div class="lable01"></div>
+                <div class="text_column">
+                    <php> echo($message); </php>
+                    <div class="lable"></div>
+                </div>
+                <else/>
+                <div class="lable02"></div>
+                <div class="text_column">
+                    <php> echo($error); </php>
+                    <div class="lable"></div>
+                </div>
+            </if>
+            <a href="{:U('index/index')}"><div class="tbn_01">返回首页</div></a>
+            <a href="{$jumpUrl}"><div class="tbn_02">我知道了</div></a>
+
+            <div class="cartoon02"></div>
+        </div>
+    </section>
+
+<include  file='Public:originfooter'/> 

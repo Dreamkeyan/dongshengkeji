@@ -1,0 +1,207 @@
+<include file='Public/header' />
+<title>东升科技--首页</title>
+<include file='Public:header_column' />
+	
+		<div class="banner"></div>
+		<div class="topLogo"></div>
+	</div>
+	
+	<div class="mainBody">
+		<div class="mainL">
+			<div class="mLogin">
+				<table width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="29%" align="right">员工帐号</td>
+						<td><input class="ipt137" name="" type="text" value="" /></td>
+					</tr>
+					<tr>
+						<td width="29%" align="right">员工密码</td>
+						<td><input class="ipt137" name="" type="text" value="" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="a_l"><input name="" type="checkbox" value="" />记住密码</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input class="btn111" type="button" value="" /></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="mLbox">
+
+<div class="mtit01">
+	<h1>机房规范</h1>
+	<p><a href="{:U('zixundongtai/newsList',array('cid'=>38))}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<foreach name='jfgf' item='i'>
+	
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$i['id']))}" target="_blank">{$i['title']}</a><br/>
+	</foreach>
+</div>
+		    </div>
+<div class="mLcall">
+	<include file='Public:lianxiwomen'/>
+</div>
+		</div>
+		
+		<div class="mainMid">
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('Home/zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+	<div class="mNewsbox">
+		
+			<p class="imgBorder"><a href="{:U('zixundongtai/newsDetail',array('id'=>$qyxw[0]['id']))}" target="_blank"><img src="{$qyxw[0]['litpic']}" width="232" height="166" /></a></p>
+		
+		<div class="textinfo">
+			
+				<h2 title="{$qyxw[0]['title']}">{$qyxw[0]['title']}</h2>
+				<p title="{$qyxw[0]['title']}"><a href="{:U('zixundongtai/newsDetail',array('id'=>$qyxw[0]['id']))}" target="_blank">{$qyxw[0]['title']}</a></p>
+			
+			<div class="list">
+				
+				<foreach name="qyxw" item='art' key='k'>
+					<if condition="$k gt 0">
+						·<a href="{:U('zixundongtai/newsDetail',array('id'=>$art['id']))}" target="_blank">{$art['title']}</a><br/>
+					</if>
+				</foreach>
+			</div>
+	 </div>
+</div>
+			<div class="tradeBox">
+				<div class="mtit01">
+					<h1 id="mtab1" class="tabbg01">行业资讯</h1>
+					<h1 id="mtab2" class="tabbg02">行业技术</h1>
+					<p><a href="{:U('zixundongtai/zixunList')}">更多>></a></p>
+				</div>
+				<div id="mct1" class="tradeCont">
+
+<div class="fl">
+	<div class="picinfo">
+		
+		<p class="imgBorder"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyzx[0]['id']))}" target="_blank"><img src="{$hyzx[0][litpic]}" width="81" height="59" border="0"/></a></p>
+		<div class="textinfo">
+			<h2 title="{$hyzx[0][title]}"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyzx[0]['id']))}" target="_blank">{$subtitle}</a></h2>
+			<p title="{$hyzx[0][title]}">{$hyzx[0][title]}...<a class="redf01" href="{:U('zixundongtai/newsDetail',array('id'=>$hyzx[0]['id']))}" target="_blank">[详细]</a></p>
+		</div>
+		
+	</div>
+	<div class="list">
+		<foreach name='hyzx' item='hyzx' key='k'>
+			<if condition='($k gt 0) and ($k lt 5)'>
+			·<a href="{:U('zixundongtai/newsDetail',array('id'=>$hyzx['id']))}" target="_blank">{$hyzx['title']}</a><br/>
+			</if>
+		</foreach>
+	</div>
+</div>
+<div class="fl">
+	<div class="picinfo">
+		
+	</div>
+	<div class="list">
+		
+	</div>
+</div>
+
+				    
+				</div>
+				<div id="mct2" class="tradeCont hidden">
+
+<div class="fl">
+	<div class="picinfo">
+		<p class="imgBorder"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[0]['id']))}" target="_blank"><img src="{$hyjs[0]['litpic']}" width="81" height="59" border="0"/></a></p>
+		<div class="textinfo">
+			<h2 title="{$hyjs[0]['title']}"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[0]['id']))}" target="_blank">
+				{$hyjs[0]['title']}
+			</a></h2>
+			<p title="{$hyjs[0]['title']}">{$hyjs[0]['title']}...<a class="redf01" href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[0]['id']))}" target="_blank">[详细]</a></p>
+		</div>
+		
+	</div>
+	<div class="list">
+		<foreach name='hyjs' item='v' key='k'>
+			<if condition='($k gt 0) and ($k lt 5)'>
+				·<a href="{:U('zixundongtai/newsDetail',array('id'=>$v['id']))}" target="_blank">{$v[title]}</a><br/>
+			</if>
+		</foreach> 
+			
+	</div>
+</div>
+
+<div class="fl">
+	<div class="picinfo">
+			<p class="imgBorder"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[5]['id']))}" target="_blank"><img src="{$hyjs[5]['litpic']}" width="81" height="59" border="0"/></a></p>
+			<div class="textinfo">
+				<h2 title="{$hyjs[5]['title']}"><a href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[5]['id']))}" target="_blank">{$hyjs[5]['title']}</a></h2>
+				<p title="{$hyjs[5]['title']}">{$hyjs[5]['title']}...<a class="redf01" href="{:U('zixundongtai/newsDetail',array('id'=>$hyjs[5]['id']))}" target="_blank">[详细]</a></p>
+			</div>
+		</div>
+	<div class="list">
+		<foreach name='hyjs' item='i' key='k'>
+			<if condition='($k gt 5) and ($k lt 10)'>
+				·<a href="{:U('zixundongtai/newsDetail',array('id'=>$i['id']))}" target="_blank">{$i['title']}</a><br/>
+			</if>
+		</foreach>
+	</div>
+     </div>
+				</div>
+			</div>
+			<script>
+				var SDmodel=new scrollDoor();
+					SDmodel.sd(["mtab1","mtab2"],
+								["mct1","mct2"],
+								"tabbg02","tabbg01");
+			</script>
+			
+			<div class="mtit01 tspace8">
+				<h1>新产品新材料中心</h1>
+				<p><a href="{:U('product/productList')}">更多>></a></p>
+			</div>
+			<div class="picWrap">
+				<foreach name='cpcl' item='cp'>
+					<div class="picbox">
+						<a href="{:U('product/productDetail',array('id'=>$cp['id'],'cid'=>$cp['cid']))}" target="_blank" title="{$cp['title']}"><img src="{$cp['litpic']}" width="100" height="75"/></a>
+						<p><a href="{:U('product/productDetail',array('id'=>$cp['id'],'cid'=>$cp['cid']))}" target="_blank" title="{$cp['title']}">{$cp['title']}</p>
+					</div>
+				</foreach>
+			</div>
+			
+		</div>
+		 
+		<div class="mainR">
+			
+				
+<div class="imgbox">
+	<include file='Public:right_column' />
+</div>
+
+            
+            
+			<div class="mRbox">
+
+<div class="mtit01">
+	<h1>典型案例</h1>
+	<p><a href="{:U('dianxinganli/anllist')}" target="_blank">更多>></a></p>
+</div>
+
+
+<div class="picWrap02">
+	
+	<foreach name='dxanl' item='anl'>
+		<p class="picbox02">
+		<a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}" target="_blank"><img src="{$anl['litpic']}" width="149" height="108" border="0"/></a>
+		</p>
+		<b><a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}">{$anl['title']}</a></b>
+	</foreach>
+
+</div>
+			     
+			</div>
+		 </div>
+		</div>
+	</div>
+
+<include file='Public:footer' />	

@@ -1,0 +1,106 @@
+<include file='Public:header' />
+<title>东升科技-分公司</title>
+<include file='Public:header_column' />
+        
+		<div class="banner02"><img src="__PUBLIC__/images/banner02.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+	</div>
+	
+	
+	<div class="mainBody">
+		<div class="inc_tit">
+			<h3 id="timeShow" name="timeShow"></h3>
+			<script language="javascript">
+       		 	window.onload = disptime;
+			</script>
+			<p class="fr"><a href="#">首页</a> &gt; <span class="redf02">分公司</span></p>
+		</div>
+		
+		
+		<div class="mainL03">
+			<div class="mtit02">分公司</div>
+			<div class="menuBox">
+				<div class="menuBar01"><a href="{:U('compintor/filiale')}">分公司</a></div>
+			</div>
+			<div class="menuBottom"></div>
+			
+			<div class="mLbox">
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	
+	<foreach name='newslist' item='news'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+		<?php
+			echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+		</a><br/>
+	</foreach>	
+</div>
+			</div>
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+            
+            
+		</div>
+		
+		<div class="mainR03">
+			<div class="inc_Rtit"><h4>分公司</h4></div>
+			
+				
+
+
+
+<div class="inc_Rtit02 tspace15">银川分公司</div>
+<div class="txtBox04">
+	&nbsp;&nbsp;&nbsp;&nbsp;<b class="redf02">银川分公司</b><p>银川分公司：</p>
+<p>　　　　地址：银川市正源北街万达广场A座620室</p>
+<p>　　　　TEL：0951-6191682、6191683</p>
+<p>　　　　FAX：0951-6191682转814</p>
+</div>
+
+  	
+
+<div class="inc_Rtit02 tspace15">兰州办事处</div>
+<div class="txtBox04">
+	&nbsp;&nbsp;&nbsp;&nbsp;<b class="redf02">兰州办事处</b><p>兰州办事处：</p>
+<p>　　　　地址：兰州市城关区省委大教梁小区2号楼2单元3201室</p>
+<p>　　　　TEL：0931-8878142</p>
+<p>　　　　FAX：0931-8878142</p>
+</div>
+
+  	
+
+<div class="inc_Rtit02 tspace15">西宁办事处</div>
+<div class="txtBox04">
+	&nbsp;&nbsp;&nbsp;&nbsp;<b class="redf02">西宁办事处</b><p>西宁办事处：</p>
+<p>　　　　地址：西宁市民和路九合院9栋242室</p>
+<p>　　　　TEL：0971-8123051</p>
+<p>　　　　FAX：0971-8123051</p>
+<p>&nbsp;</p>
+</div>
+
+  	
+
+<div class="inc_Rtit02 tspace15">内蒙古办事处</div>
+<div class="txtBox04">
+	&nbsp;&nbsp;&nbsp;&nbsp;<b class="redf02">内蒙古办事处</b><p>内蒙古办事处：</p>
+<p>　　　　地址：内蒙呼和浩特世纪六路金巧园21号楼</p>
+<p>　　　　TEL：0471-2658482</p>
+<p>　　　　FAX：0471-2658482</p>
+</div>
+
+  	
+
+
+			
+			
+		</div>
+		
+	</div>
+
+<include file='Public:footer' />

@@ -1,0 +1,76 @@
+<include file='Public:header' />
+<title>东升科技-典型案例</title>
+<include file='Public:header_column'/>
+		<div class="banner02"><img src="__PUBLIC__/images/banner03.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+	</div>
+	
+	<div class="mainBody">
+		<div class="inc_tit">
+			<h3 id="timeShow" name="timeShow"></h3>
+			<script language="javascript">
+       		 	window.onload = disptime;
+			</script>
+			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">典型案例</span></p>
+		</div>
+	
+	<div class="mainL02">
+		<foreach name='alList' item='anli' key='k'>
+			<div class="govBox">
+				<div class="mtit01">
+					<h1 class="tabbg01">{$ids[$k]['name']}</h1>
+					<p><a href="{:U('anliDetailList',array('cid'=>$ids[$k]['id']))}">更多>></a></p>
+				</div>
+				<div class="govCont">
+					<?php
+						$an = $alList[$k];
+					?>
+					<foreach name='an' item='item'>
+						<div class="pictxt">
+							<p class="imgBorder"><a href="{:U('dianxinganli/anliDetail',array('id'=>$item[id]))}" target="_blank"><img src="{$item['litpic']}" width="105" height="75" border="0"/></a></p>
+							<div class="textinfo">
+								<h2><a href="{:U('dianxinganli/anliDetail',array('id'=>$item[id]))}" target="_blank">{$item['title']}</a></h2>
+								<p>{$item['title']}...[<a class="redf02" target="_blank" href="{:U('dianxinganli/anliDetail',array('id'=>$item[id]))}">详细</a>]</p>
+							</div>
+						</div>
+					</foreach>
+				</div>
+			</div>
+		</foreach>
+	</div>
+		
+		
+		<div class="mainR02">
+			
+				
+<div class="imgbox">
+	<include file='Public:right_column' />
+</div>
+
+            
+            
+			
+			<div class="mRbox">
+
+<div class="mtit01">
+	<h1>典型案例</h1>
+	<p><a href="{:U('dianxinganli/anllist')}" target="_blank">更多>></a></p>
+</div>
+
+
+<div class="picWrap02">
+
+	<foreach name='dxanl' item='anl'>
+		<p class="picbox02">
+		<a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}" target="_blank"><img src="{$anl['litpic']}" width="149" height="108" border="0"/></a>
+		</p>
+		<b><a href="{:U('dianxinganli/anliDetail',array('id'=>$anl[id]))}">{$anl['title']}</a></b>
+	</foreach>
+</div>
+			     
+			</div>
+			
+		</div>
+		
+	</div>
+<include file='Public:footer' />

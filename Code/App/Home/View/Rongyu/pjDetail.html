@@ -1,0 +1,61 @@
+<include file='Public:header' />
+<title>东升科技--荣誉</title>
+<include file='Public:header_column' />
+	<div class="banner02"><img src="__PUBLIC__/images/banner10.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+</div>
+	
+<div class="mainBody">
+	<div class="inc_tit">
+		<h3 id="timeShow" name="timeShow"></h3>
+<script language="javascript">
+window.onload = disptime;
+</script>
+		<p class="fr"><a href="index.jsp.html">首页</a> &gt; <span class="redf02">用户评价</span></p>
+	</div>
+	<div class="mainL03">
+			<div class="mtit02">荣誉</div>
+			<div class="menuBox">
+				<foreach name='cultureColumn' item='inclumn'>
+					<div class="menuBar01"><a href="{:U('hornor',array('cid'=>$inclumn['id']))}">{$inclumn['name']}</a></div>
+				</foreach>
+			</div>
+			<div class="menuBottom"></div>
+			
+			<div class="mLbox">
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="{:U('zixundongtai/newsList')}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<foreach name='newslist' item='news'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$news[id]))}" target="_blank">
+		<?php
+			echo mb_substr($news['title'], 0, 15, 'utf-8' )
+		?>	
+		</a><br/>
+	</foreach>	
+</div>
+			</div>
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+            
+            
+			
+		</div>
+		
+		
+		
+		<div class="mainR03">
+			<div class="inc_Rtit"><h4>用户评价</h4></div>
+			<div class="user2">
+				{$clo['content']}
+		    </div>
+			
+		</div>
+	</div>
+
+
+<include file='Public:footer' />

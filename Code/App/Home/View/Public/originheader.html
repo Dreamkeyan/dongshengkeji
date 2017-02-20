@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-CN">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <title>{$CONFIG.site.sitename}</title>
+        <link rel="stylesheet" href="__ROOT__/Asset/Mobile/css/basic.css"/>
+        <link rel="stylesheet" href="__ROOT__/Asset/Mobile/css/index.css"/>
+        <link rel="stylesheet" href="__ROOT__/Asset/Mobile/css/style.css"/>
+        <link rel="stylesheet" href="__ROOT__/Asset/Mobile/css/ls.css"/>
+        <script src="__ROOT__/Asset/Mobile/js/jquery-1.11.1.min.js"></script>
+        <script src="__ROOT__/Asset/Mobile/js/public.js?v=20150907"></script> 
+        <script src="__ROOT__/Asset/Mobile/js/ajaxfileupload.js"></script>
+        <script src="__ROOT__/Asset/Mobile/js/ls.js"></script>
+        <script src="__ROOT__/Asset/Mobile/js/superslide.js"></script>      
+        <script>
+            navigator.geolocation.getCurrentPosition(function (position) {
+                dingwei('{:U("index/dingwei",array("t"=>$nowtime,"lat"=>"llaatt","lng"=>"llnngg"))}', position.coords.latitude, position.coords.longitude);
+            }, function (position) {
+                dingwei('{:U("index/dingwei",array("t"=>$nowtime,"lat"=>"llaatt","lng"=>"llnngg"))}', '{$CONFIG.site.lat}', '{$CONFIG.site.lng}');
+            }, {timeout: 2000});
+        </script>
+    </head>

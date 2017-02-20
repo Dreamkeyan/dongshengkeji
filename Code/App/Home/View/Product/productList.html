@@ -1,0 +1,89 @@
+<include file='Public:header' />
+<title>东升科技--产品介绍</title>
+<include file='Public:header_column' />
+
+	<div class="banner02"><img src="__PUBLIC__/images/banner04.jpg" width="973" height="149" /></div>
+		<div class="topLogo"></div>
+</div>
+	
+<div class="mainBody">
+	<div class="inc_tit">
+		<h3 id="timeShow" name="timeShow"></h3>
+<script language="javascript">
+window.onload = disptime;
+</script>
+		<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">产品介绍</span></p>
+	</div>
+	<div class="mainL03">
+			
+				
+<div class="mtit02">产品介绍</div>
+<div class="menuBox">
+	<foreach name='productColumn' item='proclumn'>
+	
+		<if condition='($proclumn["name"] eq $clo["name"])'>
+			<div class="menuBar01"><a href="{:U('productList',array('cid'=>$proclumn['id']))}">{$proclumn['name']}</a></div>
+		<else />
+			<div class="menuBar02"><a href="{:U('productList',array('cid'=>$proclumn['id']))}">{$proclumn['name']}</a></div>
+		</if>
+		
+	</foreach>
+
+</div>
+<div class="menuBottom"></div>
+		<div class="mLbox">
+
+<div class="mtit01">
+	<h1>行业技术</h1>
+	<p><a href="{:U('zixundongtai/',array('id'=>39))}" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<foreach name='jslist' item='js'>
+		·<a href="{:U('zixundongtai/newsDetail',array('id'=>$js['id']))}" target="_blank">{$js['title']}</a><br/>
+	</foreach>	
+	
+</div>
+
+		</div>
+			
+		
+			
+<div class="mLcall">
+	<include file='Public:lianxiwomen' />
+</div>
+        
+        
+			
+	</div>
+			
+	<div class="mainR03" id="product" name="product">
+		
+           
+
+<div class="inc_Rtit"><h4>产品中心</h4></div>
+<div class="clearit">
+	<foreach name='list' item='prolist'>
+		<div class="inc_picinfo">
+			<p class="imgBorder"><a href="{:U('productDetail',array('id'=>$prolist['id']))}" target="_blank" title="{$prolist['title']}"><img src="{$prolist['litpic']}" width="120" height="91" /></a></p>
+			<div class="info">
+				<b>产品名称：</b><b class="redf02"><a href="{:U('productDetail',array('id'=>$prolist['id'],'cid'=>$prolist['cid']))}" target="_blank" title="{$prolist['title']}">{$prolist['title']}</a></b><br />
+				<b>产品编号：</b>{$prolist['pno']}<br />
+				<b>产品分类：</b>{$prolist['brand']} >><br/>  
+				<b>产品点击：</b>{$prolist['click']}<br/>
+				<b>更新日期：</b><?php
+					echo date('Y:m:d H:i:s',$prolist['publishtime']);
+				?><br/>
+			</div>
+		</div>
+	</foreach>
+	
+</div>
+<div class="inc_page">
+	{$page}
+</div>
+         
+         
+	</div>
+</div>
+
+<include file='Public:footer'/>

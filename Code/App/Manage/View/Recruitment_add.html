@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel='stylesheet' type="text/css" href="__PUBLIC__/css/style.css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.form.min.js"></script>
+<script type="text/javascript" src="{:U('Public/editor')}"></script>
+<script type="text/javascript">
+	var data_path = "__DATA__";
+	var tpl_public = "__PUBLIC__";
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/calendar.config.js"></script>
+<script type="text/javascript" src="__DATA__/static/jq_plugins/iColorPicker/iColorPicker.js"></script>
+
+</head>
+<body>
+<div class="main">
+    <div class="pos">发布招聘</div>
+	<div class="form">
+		<form method='post' id="form_do" name="form_do" action="{:U('Recruitment/add')}">
+		<dl>
+			<dt>招聘职位：</dt>
+			<dd>
+				<input type="text" name="gangwei" class="inp_one" />
+			</dd>
+		</dl>
+		<dl>
+			<dt>招聘人数：</dt>
+			<dd>
+				<input type="text" name="num" class="inp_one" />
+			</dd>
+		</dl>
+		<dl>
+			<dt> 工作地点：</dt>
+			<dd>
+				<input type="text" name="address" class="inp_one" />
+			</dd>
+		</dl>
+		
+		<dl>
+			<dt> 工资待遇：</dt>
+			<dd>
+				<input type="text" name="gongzi" class="inp_one" />
+			</dd>
+		</dl>
+		
+		<dl>
+			<dt> 有效期限：</dt>
+			<dd>
+				<input type="text" name="timeover" class="inp_one" />
+			</dd>
+		</dl>
+
+		<dl>
+			<dt> 联系方式：</dt>
+			<dd>
+				<input type="text" name="information" class="inp_one" />
+			</dd>
+		</dl>
+
+		<dl>
+			<dt> 招聘要求：</dt>
+			<dd>
+				<textarea name="info" id="info" cols="60" rows="10"></textarea>
+			</dd>
+		</dl>		
+		<dl>
+            <dt> 发布时间：</dt>
+            <dd>
+                
+                <input type="text" class="inp_one" name="addtime" id="addtime" value="{:date('Y-m-d',time())}">
+                <script type="text/javascript">
+                    Calendar.setup({
+                        weekNumbers: true,
+                        inputField : "addtime",
+                        trigger    : "addtime",
+                        dateFormat: "%Y-%m-%d",
+                        showTime: true,
+                        minuteStep: 1,
+                        onSelect   : function() {this.hide();}
+                    });
+                </script>
+            </dd>
+        </dl>
+		<div class="form_b">		
+			<input type="hidden" name="id" value="{$id}" />
+			<input type="submit" class="btn_blue" id="submit" value="提 交">
+		</div>
+	   </form>
+	</div>
+</div>
+
+
+</body>
+</html>
