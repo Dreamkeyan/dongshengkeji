@@ -12,12 +12,12 @@
 <meta name="description" content="" />
 <meta name="Author" Content="" />
 <meta name="Copyright" Content="" />
-<link href="/dongsheng1/Code/Public/asset/home/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/dongshengsan/Code/Public/asset/home/css/main.css" rel="stylesheet" type="text/css" />
 
-<script src="/dongsheng1/Code/Public/asset/home/js/scroll-door.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/scroll-door.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
 <title>东升科技--首页</title>
 </head>
 <body>
@@ -200,11 +200,11 @@
 			
 				
 <div class="imgbox">
-	<img src="/dongsheng1/Code/Public/asset/home/images/img01.gif" width="181" height="37" onclick="window.location.href='mailto:hjd890@163.com';"/>
-<img src="/dongsheng1/Code/Public/asset/home/images/img02.gif" width="181" height="37" onclick="window.location.href='mailto:13519115500@163.com';"/>
-<a href="<?php echo U('zhaopin/recruit');?>"><img src="/dongsheng1/Code/Public/asset/home/images/img03.gif" width="181" height="37" /></a>
-<a href="<?php echo U('qiyewenhua/culture',array('cid'=>'46'));?>"><img src="/dongsheng1/Code/Public/asset/home/images/img04.gif" width="181" height="37" /></a>
-<a href="<?php echo U('compintor/filiale');?>"><img src="/dongsheng1/Code/Public/asset/home/images/img05.gif" width="181" height="37" /></a>
+	<img src="/dongshengsan/Code/Public/asset/home/images/img01.gif" width="181" height="37" onclick="window.location.href='mailto:hjd890@163.com';"/>
+<img src="/dongshengsan/Code/Public/asset/home/images/img02.gif" width="181" height="37" onclick="window.location.href='mailto:13519115500@163.com';"/>
+<a href="<?php echo U('zhaopin/recruit');?>"><img src="/dongshengsan/Code/Public/asset/home/images/img03.gif" width="181" height="37" /></a>
+<a href="<?php echo U('qiyewenhua/culture',array('cid'=>'46'));?>"><img src="/dongshengsan/Code/Public/asset/home/images/img04.gif" width="181" height="37" /></a>
+<a href="<?php echo U('compintor/filiale');?>"><img src="/dongshengsan/Code/Public/asset/home/images/img05.gif" width="181" height="37" /></a>
 </div>
 
             

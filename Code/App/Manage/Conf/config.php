@@ -29,7 +29,7 @@ return array(
 	'HTML_CACHE_ON' => false,
 
 	'TMPL_PARSE_STRING' => array(
-		'__PUBLIC__' => __ROOT__. ltrim(APP_PATH,'.'). MODULE_NAME . '/View/Public',
+		'__PUBLIC__' =>__ROOT__. '/asset/manage',
 		'__DATA__' => __ROOT__. '/Data',
 	),
 );

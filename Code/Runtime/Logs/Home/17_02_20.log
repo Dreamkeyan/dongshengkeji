@@ -1,486 +1,297 @@
-[ 2017-02-20T17:01:18+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/
+[ 2017-02-20T17:57:18+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
-SQL: SHOW COLUMNS FROM `xyh_meta` [ RunTime:0.0217s ]
-SQL: SELECT `name`,`value` FROM `xyh_meta`  [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `xyh_config` [ RunTime:0.0160s ]
-SQL: SELECT `name`,`value`,`typeid` FROM `xyh_config`  [ RunTime:0.0007s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002677s ]
+SQL: SHOW COLUMNS FROM `xyh_meta` [ RunTime:0.0278s ]
+SQL: SELECT `name`,`value` FROM `xyh_meta`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xyh_config` [ RunTime:0.0204s ]
+SQL: SELECT `name`,`value`,`typeid` FROM `xyh_config`  [ RunTime:0.0011s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0093s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0079s ]
 SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0006s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0011s ]
 SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0004s ]
 SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0009s ]
 SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0004s ]
 SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0017s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0003s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\IndexController.class.php 第 26 行.
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,3   [ RunTime:0.0004s ]
-SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0052s ]
-SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0007s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
-NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015827s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015860s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
-
-[ 2017-02-20T17:01:20+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0075s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0005s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0076s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0003s ]
 SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0013s ]
 SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0003s ]
 SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0002s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\IndexController.class.php 第 26 行.
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,3   [ RunTime:0.0003s ]
-SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0058s ]
-SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0010s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
-NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018122s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018217s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
-
-[ 2017-02-20T17:02:10+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php?s=/dianxinganli/anllist.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0310s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0012s ]
-SQL: SELECT * FROM `xyh_category` WHERE `pid` = 8 ORDER BY `sort`  [ RunTime:0.0012s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0148s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 27 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 28 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 29 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 30 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 31 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 32 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 33 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 34 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 35 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0006s ]
-SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0005s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\DianxinganliController.class.php 第 32 行.
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,3   [ RunTime:0.0006s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018853s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018899s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
-
-[ 2017-02-20T17:02:15+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php?s=/dianxinganli/anliDetail/id/18.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0311s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `xyh_category` WHERE `pid` = 8 ORDER BY `sort`  [ RunTime:0.0007s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0005s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0134s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY `publishtime` desc LIMIT 0,10   [ RunTime:0.0014s ]
-SQL: SELECT * FROM `xyh_article` WHERE `id` = 18 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `xyh_category` WHERE `id` = 27 LIMIT 1   [ RunTime:0.0004s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 111 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018446s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.018508s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
-
-[ 2017-02-20T17:02:22+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php?s=/dianxinganli/anliDetail/id/33.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0254s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0011s ]
-SQL: SELECT * FROM `xyh_category` WHERE `pid` = 8 ORDER BY `sort`  [ RunTime:0.0014s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0014s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0271s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY `publishtime` desc LIMIT 0,10   [ RunTime:0.0012s ]
-SQL: SELECT * FROM `xyh_article` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `xyh_category` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 111 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020044s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.020116s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
-
-[ 2017-02-20T17:02:34+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php?s=/dianxinganli/anliDetail/id/95.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0305s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0012s ]
-SQL: SELECT * FROM `xyh_category` WHERE `pid` = 8 ORDER BY `sort`  [ RunTime:0.0014s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0011s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0229s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY `publishtime` desc LIMIT 0,10   [ RunTime:0.0023s ]
-SQL: SELECT * FROM `xyh_article` WHERE `id` = 95 LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `xyh_category` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0005s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Undefined index: name D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 69 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 82 行.
-NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\eb2d4a3ef6366432edfeb9b98800f0ea.php 第 111 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020319s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.020376s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
-
-[ 2017-02-20T17:05:03+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0060s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0004s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0052s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0011s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0002s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\IndexController.class.php 第 26 行.
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,3   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0059s ]
-SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0008s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
-NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015019s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.015052s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
-
-[ 2017-02-20T17:05:06+08:00 ] 127.0.0.1 /dongsheng1/Code/Public/index.php?s=/zixundongtai/newsDetail/id/40.html
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0209s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '资讯动态' LIMIT 1   [ RunTime:0.0011s ]
-SQL: SELECT * FROM `xyh_category` WHERE `pid` = 9 ORDER BY id  [ RunTime:0.0012s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0014s ]
-SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0012s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\ZixundongtaiController.class.php 第 53 行.
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0222s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,10   [ RunTime:0.0014s ]
-SQL: SELECT * FROM `xyh_article` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `xyh_category` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0006s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000545s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
-NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 97 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041925s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.042039s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
-
-[ 2017-02-20T17:10:28+08:00 ] ::1 /dongsheng1/Code/Public/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
-SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0076s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0005s ]
-SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0072s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0008s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0002s ]
-SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0015s ]
-SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0002s ]
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\App\Home\Controller\IndexController.class.php 第 26 行.
-SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('34','35','33','29','30','31','32','28','27') ORDER BY id LIMIT 0,3   [ RunTime:0.0007s ]
-SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0057s ]
-SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0012s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
-NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
-NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongsheng1\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027169s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.027203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027623s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2017-02-20T17:58:46+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/dianxinganli/anllist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 8 ORDER BY `sort`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 27 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 28 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 29 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 30 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 31 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 32 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 33 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 34 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 35 ORDER BY `publishtime` desc LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\DianxinganliController.class.php 第 32 行.
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 70 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 72 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 73 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 106 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\2f29c52295a9c0f732d411bb36104e19.php 第 108 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-02-20T17:58:53+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/yewufanwei/contents/cid/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '业务范围' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 5 ORDER BY `id`  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xyh_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY `publishtime` desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-02-20T17:58:59+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/product/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '产品介绍' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 2 ORDER BY `id`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 39 ORDER BY `publishtime` desc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0098s ]
+NOTIC: [8] Undefined variable: where D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 26 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_product` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 29 行.
+SQL: SELECT * FROM `xyh_product` ORDER BY `publishtime` desc LIMIT 0,8   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: clo D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-02-20T17:59:17+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/Product/productDetail/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '产品介绍' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 2 ORDER BY `id`  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `xyh_product` WHERE `id` = 25 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY `publishtime` desc LIMIT 0,10   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: clo D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 61 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\c3e9c3161817b61ac172fe4328866a14.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-02-20T18:02:40+08:00 ] ::1 /dongshengsan/Code/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,3   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
 

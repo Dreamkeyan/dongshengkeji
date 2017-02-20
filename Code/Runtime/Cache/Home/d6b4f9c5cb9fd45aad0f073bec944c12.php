@@ -18,7 +18,7 @@
 <script src="/dongshengsan/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script src="/dongshengsan/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
 <script src="/dongshengsan/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
-<title>东升科技-典型案例</title>
+<title>东升科技--产品介绍</title>
 </head>
 <body>
 	<div class="header">
@@ -44,75 +44,83 @@
 	function SetHome(obj,vrl){try{obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);}catch(e){if(window.netscape) {try {netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");}catch (e) {alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");}var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);prefs.setCharPref('browser.startup.homepage',vrl);}}}
 </script>
 
-		<div class="banner02"><img src="/dongshengsan/Code/Public/asset/home/images/banner03.jpg" width="973" height="149" /></div>
+
+	<div class="banner02"><img src="/dongshengsan/Code/Public/asset/home/images/banner04.jpg" width="973" height="149" /></div>
 		<div class="topLogo"></div>
-	</div>
+</div>
 	
-	<div class="mainBody">
-		<div class="inc_tit">
-			<h3 id="timeShow" name="timeShow"></h3>
-			<script language="javascript">
-       		 	window.onload = disptime;
-			</script>
-			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">典型案例</span></p>
-		</div>
-	
-	<div class="mainL02">
-		<?php if(is_array($alList)): foreach($alList as $k=>$anli): ?><div class="govBox">
-				<div class="mtit01">
-					<h1 class="tabbg01"><?php echo ($ids[$k]['name']); ?></h1>
-					<p><a href="<?php echo U('anliDetailList',array('cid'=>$ids[$k]['id']));?>">更多>></a></p>
-				</div>
-				<div class="govCont">
-					<?php
- $an = $alList[$k]; ?>
-					<?php if(is_array($an)): foreach($an as $key=>$item): ?><div class="pictxt">
-							<p class="imgBorder"><a href="<?php echo U('dianxinganli/anliDetail',array('id'=>$item[id]));?>" target="_blank"><img src="<?php echo ($item['litpic']); ?>" width="105" height="75" border="0"/></a></p>
-							<div class="textinfo">
-								<h2><a href="<?php echo U('dianxinganli/anliDetail',array('id'=>$item[id]));?>" target="_blank"><?php echo ($item['title']); ?></a></h2>
-								<p><?php echo ($item['title']); ?>...[<a class="redf02" target="_blank" href="<?php echo U('dianxinganli/anliDetail',array('id'=>$item[id]));?>">详细</a>]</p>
-							</div>
-						</div><?php endforeach; endif; ?>
-				</div>
-			</div><?php endforeach; endif; ?>
+<div class="mainBody">
+	<div class="inc_tit">
+		<h3 id="timeShow" name="timeShow"></h3>
+<script language="javascript">
+window.onload = disptime;
+</script>
+		<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <span class="redf02">产品介绍</span></p>
 	</div>
-		
-		
-		<div class="mainR02">
+	<div class="mainL03">
 			
 				
-<div class="imgbox">
-	<img src="/dongshengsan/Code/Public/asset/home/images/img01.gif" width="181" height="37" onclick="window.location.href='mailto:hjd890@163.com';"/>
-<img src="/dongshengsan/Code/Public/asset/home/images/img02.gif" width="181" height="37" onclick="window.location.href='mailto:13519115500@163.com';"/>
-<a href="<?php echo U('zhaopin/recruit');?>"><img src="/dongshengsan/Code/Public/asset/home/images/img03.gif" width="181" height="37" /></a>
-<a href="<?php echo U('qiyewenhua/culture',array('cid'=>'46'));?>"><img src="/dongshengsan/Code/Public/asset/home/images/img04.gif" width="181" height="37" /></a>
-<a href="<?php echo U('compintor/filiale');?>"><img src="/dongshengsan/Code/Public/asset/home/images/img05.gif" width="181" height="37" /></a>
-</div>
+<div class="mtit02">产品介绍</div>
+<div class="menuBox">
+	<?php if(is_array($productColumn)): foreach($productColumn as $key=>$proclumn): if(($proclumn["name"] == $clo["name"])): ?><div class="menuBar01"><a href="<?php echo U('productList',array('cid'=>$proclumn['id']));?>"><?php echo ($proclumn['name']); ?></a></div>
+		<?php else: ?>
+			<div class="menuBar02"><a href="<?php echo U('productList',array('cid'=>$proclumn['id']));?>"><?php echo ($proclumn['name']); ?></a></div><?php endif; endforeach; endif; ?>
 
-            
-            
-			
-			<div class="mRbox">
+</div>
+<div class="menuBottom"></div>
+		<div class="mLbox">
 
 <div class="mtit01">
-	<h1>典型案例</h1>
-	<p><a href="<?php echo U('dianxinganli/anllist');?>" target="_blank">更多>></a></p>
+	<h1>行业技术</h1>
+	<p><a href="<?php echo U('zixundongtai/',array('id'=>39));?>" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<?php if(is_array($jslist)): foreach($jslist as $key=>$js): ?>·<a href="<?php echo U('zixundongtai/newsDetail',array('id'=>$js['id']));?>" target="_blank"><?php echo ($js['title']); ?></a><br/><?php endforeach; endif; ?>	
+	
 </div>
 
-
-<div class="picWrap02">
-
-	<?php if(is_array($dxanl)): foreach($dxanl as $key=>$anl): ?><p class="picbox02">
-		<a href="<?php echo U('dianxinganli/anliDetail',array('id'=>$anl[id]));?>" target="_blank"><img src="<?php echo ($anl['litpic']); ?>" width="149" height="108" border="0"/></a>
-		</p>
-		<b><a href="<?php echo U('dianxinganli/anliDetail',array('id'=>$anl[id]));?>"><?php echo ($anl['title']); ?></a></b><?php endforeach; endif; ?>
-</div>
-			     
-			</div>
-			
 		</div>
+			
 		
+			
+<div class="mLcall">
+		总机: 029-89585600(白天)<br />
+	技术部：13519115500<br />
+    029-88443628<br />
+	投诉电话：13909183533<br />
+</div>
+        
+        
+			
 	</div>
+			
+	<div class="mainR03" id="product" name="product">
+		
+           
+
+<div class="inc_Rtit"><h4>产品中心</h4></div>
+<div class="clearit">
+	<?php if(is_array($list)): foreach($list as $key=>$prolist): ?><div class="inc_picinfo">
+			<p class="imgBorder"><a href="<?php echo U('productDetail',array('id'=>$prolist['id']));?>" target="_blank" title="<?php echo ($prolist['title']); ?>"><img src="<?php echo ($prolist['litpic']); ?>" width="120" height="91" /></a></p>
+			<div class="info">
+				<b>产品名称：</b><b class="redf02"><a href="<?php echo U('productDetail',array('id'=>$prolist['id'],'cid'=>$prolist['cid']));?>" target="_blank" title="<?php echo ($prolist['title']); ?>"><?php echo ($prolist['title']); ?></a></b><br />
+				<b>产品编号：</b><?php echo ($prolist['pno']); ?><br />
+				<b>产品分类：</b><?php echo ($prolist['brand']); ?> >><br/>  
+				<b>产品点击：</b><?php echo ($prolist['click']); ?><br/>
+				<b>更新日期：</b><?php
+ echo date('Y:m:d H:i:s',$prolist['publishtime']); ?><br/>
+			</div>
+		</div><?php endforeach; endif; ?>
+	
+</div>
+<div class="inc_page">
+	<?php echo ($page); ?>
+</div>
+         
+         
+	</div>
+</div>
+
 <div class="mainBottom"></div>
 	
 	

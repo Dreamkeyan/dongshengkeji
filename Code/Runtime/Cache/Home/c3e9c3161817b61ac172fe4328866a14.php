@@ -12,13 +12,13 @@
 <meta name="description" content="" />
 <meta name="Author" Content="" />
 <meta name="Copyright" Content="" />
-<link href="/dongsheng1/Code/Public/asset/home/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/dongshengsan/Code/Public/asset/home/css/main.css" rel="stylesheet" type="text/css" />
 
-<script src="/dongsheng1/Code/Public/asset/home/js/scroll-door.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
-<script src="/dongsheng1/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
-<title>东升科技-典型案例</title>
+<script src="/dongshengsan/Code/Public/asset/home/js/scroll-door.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
+<script src="/dongshengsan/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
+<title>东升科技-产品介绍</title>
 </head>
 <body>
 	<div class="header">
@@ -45,49 +45,61 @@
 </script>
 
 
-		<div class="banner02"><img src="/dongsheng1/Code/Public/asset/home/images/banner03.jpg" width="973" height="149" /></div>
+		<div class="banner02"><img src="/dongshengsan/Code/Public/asset/home/images/banner04.jpg" width="973" height="149" /></div>
 		<div class="topLogo"></div>
 	</div>
+	
 	
 	<div class="mainBody">
 		<div class="inc_tit">
 			<h3 id="timeShow" name="timeShow"></h3>
 			<script language="javascript">
-       		 	window.onload = disptime;
+			window.onload = disptime;
 			</script>
-			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <a href="<?php echo U('anllist');?>">典型案例</a> &gt; <span class="redf02"><?php echo ($lanmu['name']); ?></span></p>
+			<p class="fr"><a href="http://localhost/xadosun">首页</a> &gt; <a href="<?php echo U('productList');?>">产品中心</a></p>
 		</div>
-		
 		
 		<div class="mainL03">
 			
 				
-
-
-<div class="mtit02">典型案例</div>
+<div class="mtit02">产品介绍</div>
 <div class="menuBox">
-	<?php if(is_array($anlist)): foreach($anlist as $key=>$an): if(($an["name"] == $anli["name"])): ?><div class="menuBar01"><a href=":U('anliDetailList',array('cid'=>$an['id']))}"><?php echo ($an['name']); ?></a></div>
+
+	<?php if(is_array($productColumn)): foreach($productColumn as $key=>$proclumn): if(($proclumn["name"] == $clo["name"])): ?><div class="menuBar01"><a href="<?php echo U('productList',array('cid'=>$proclumn['id']));?>"><?php echo ($proclumn['name']); ?></a></div>
 		<?php else: ?>
-			<div class="menuBar02"><a href="<?php echo U('anliDetailList',array('cid'=>$an['id']));?>"><?php echo ($an['name']); ?></a></div><?php endif; endforeach; endif; ?>	
+			<div class="menuBar02"><a href="<?php echo U('productList',array('cid'=>$proclumn['id']));?>"><?php echo ($proclumn['name']); ?></a></div><?php endif; endforeach; endif; ?>
+
 </div>
 <div class="menuBottom"></div>
 
-	<div class="mLbox">
-
-		<div class="mtit01">
-			<h1>企业新闻</h1>
-			<p><a href="<?php echo U('zixundongtai/newsList');?>" target="_blank">更多>></a></p>
-		</div>
-		<div class="list">
-			<?php if(is_array($newslist)): foreach($newslist as $key=>$news): ?>·<a href="<?php echo U('zixundongtai/newsDetail',array('id'=>$news[id]));?>" target="_blank">
-				<?php
- echo mb_substr($news['title'], 0, 15, 'utf-8' ) ?>	
-				</a><br/><?php endforeach; endif; ?>
-		</div>
-	</div>
+            
+            
+			<div class="menuBottom"></div>
 			
-			
+			<div class="mLbox">
 				
+					
+
+
+
+
+
+
+<div class="mtit01">
+	<h1>企业新闻</h1>
+	<p><a href="<?php echo U('zixundongtai/newsList');?>" target="_blank">更多>></a></p>
+</div>
+<div class="list">
+	<?php if(is_array($newslist)): foreach($newslist as $key=>$news): ?>·<a href="<?php echo U('zixundongtai/newsDetail',array('id'=>$news[id]));?>" target="_blank">
+		<?php
+ echo mb_substr($news['title'], 0, 15, 'utf-8' ) ?>	
+		</a><br/><?php endforeach; endif; ?>	
+</div>
+
+			</div>
+			
+			
+			
 <div class="mLcall">
 		总机: 029-89585600(白天)<br />
 	技术部：13519115500<br />
@@ -96,29 +108,25 @@
 </div>
             
             
-			
 		</div>
 		
 		<div class="mainR03">
 			
 				
 
-
-
-<p class="f16 tspace40"><?php echo ($anli['title']); ?></p>
-<div class="inc_Rtit02 a_c">阅读次数：<?php echo ($anli['click']); ?>,发布日期：
-	<?php
- echo date("Y-m-d H:i:s", $anli[publishtime]); ?>
-</div>
+<p class="f16 tspace40"><?php echo ($product['title']); ?></p>
+<div class="inc_Rtit02 a_c">阅读次数：<?php echo ($product['click']); ?>,发布日期：<?php echo date('Y:m:d H:i:s',$product['publishtime'])?></div>
 <div class="txtBox03">
-	<?php echo ($anli['content']); ?>
+	<?php echo ($product['content']); ?>
 </div>
 
-	        
-            
+  		 		
+		    
 		</div>
+		
 	</div>
-<div class="mainBottom"></div>
+
+	<div class="mainBottom"></div>
 	
 	
 <div class="footer">
