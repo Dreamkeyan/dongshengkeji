@@ -1009,7 +1009,8 @@ function get_pinyin($str, $ishead=0, $isclose=1, $lang = 'zh-cn') {
  * @return string
  */
 function get_tpl($tpl = '', $style = '') {
-    $tplPath = './Public/'.MODULE_NAME .'/';
+    //$tplPath = './Public/'.MODULE_NAME .'/';
+    $tplPath='./public/';
     $tplPath .= empty($style) ? C('CFG_THEMESTYLE'). '/' : $style. '/';
     if (trim($tpl) == '') {
        $tplPath .= CONTROLLER_NAME. C('TMPL_FILE_DEPR'). ACTION_NAME. C('TMPL_TEMPLATE_SUFFIX');
@@ -1017,7 +1018,11 @@ function get_tpl($tpl = '', $style = '') {
         $tplPath .= $tpl;        
     }else {
         $tplPath .= $tpl. C('TMPL_TEMPLATE_SUFFIX');       
-    }   
+    }
+     $tplPath=strchr($tplPath,".html",true);
+    //echo $tplPath;
+   //$tplPath=substr($tplPath,"0",1);
+    //echo $tplPath;
     return $tplPath;
 }
 

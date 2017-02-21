@@ -1,0 +1,517 @@
+[ 2017-02-21T09:25:25+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '企业新闻' LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 36 ORDER BY id LIMIT 0,5   [ RunTime:0.0058s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业资讯' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 37 ORDER BY id LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`litpic`,`cid` FROM `xyh_article` WHERE `cid` = 39 ORDER BY id LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '机房规范' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 38 ORDER BY id LIMIT 0,10   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,3   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `xyh_product` WHERE `flag` = 5 ORDER BY publishtime  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Use of undefined constant litpic - assumed 'litpic' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 124 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Undefined variable: subtitle D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 126 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 127 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 160 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 223 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\91b3e39c136338f90b09dba9f9d80e1e.php 第 225 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2017-02-21T09:28:03+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/newsDetail/id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '资讯动态' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 9 ORDER BY id  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ZixundongtaiController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `xyh_article` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `xyh_category` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-02-21T09:28:12+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/newsDetail/id/41.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '资讯动态' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 9 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ZixundongtaiController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `xyh_article` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xyh_category` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2017-02-21T09:28:22+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/newsDetail/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '资讯动态' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 9 ORDER BY id  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '典型案例' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id` FROM `xyh_category` WHERE `pid` = 8  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ZixundongtaiController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` IN ('27','28','29','30','31','32','33','34','35') ORDER BY id LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `xyh_article` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `xyh_category` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 78 行.
+NOTIC: [8] Use of undefined constant publishtime - assumed 'publishtime' D:\phpStudy\WWW\dongshengsan\Code\Runtime\Cache\Home\5aef4fec0e198b2ca721beb586bc69a2.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-02-21T09:31:42+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+ERR: 模板不存在:../App/Home/View/./Public/Home/default/404.html.html
+
+[ 2017-02-21T09:44:49+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+ERR: 模板不存在:../App/Home/View//public/errpagedefault/404.html.html
+
+[ 2017-02-21T09:44:50+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+ERR: 模板不存在:../App/Home/View//public/errpagedefault/404.html.html
+
+[ 2017-02-21T09:45:09+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+ERR: 模板不存在:../App/Home/View//public/default/404.html.html
+
+[ 2017-02-21T09:45:45+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 模板不存在:../App/Home/View//public/default/404.html.html
+
+[ 2017-02-21T09:45:49+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+ERR: 模板不存在:../App/Home/View//public/default/404.html.html
+
+[ 2017-02-21T09:45:49+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+ERR: 模板不存在:../App/Home/View//public/default/404.html.html
+
+[ 2017-02-21T09:46:31+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:47:07+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/zixundongtai/321/id/41php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-02-21T09:53:22+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/product/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `xyh_category` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '产品介绍' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xyh_category` WHERE `pid` = 2 ORDER BY `id`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `xyh_category` WHERE `name` = '行业技术' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `xyh_article` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `xyh_article` WHERE `cid` = 39 ORDER BY `publishtime` desc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `xyh_product` [ RunTime:0.0082s ]
+NOTIC: [8] Undefined variable: where D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 26 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xyh_product` LIMIT 1   [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: where D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 29 行.
+SQL: SELECT * FROM `xyh_product` ORDER BY `publishtime` desc LIMIT 0,8   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: clo D:\phpStudy\WWW\dongshengsan\Code\App\Home\Controller\ProductController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-02-21T09:53:26+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:56:21+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [2] substr() expects parameter 3 to be long, string given D:\phpStudy\WWW\dongshengsan\Code\App\Common\Common\function.php 第 1022 行.
+ERR: 模板不存在:../App/Home/View/Trtr/productList.html
+
+[ 2017-02-21T09:56:50+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:57:54+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:57:57+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:57:58+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:57:59+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:57:59+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T09:58:13+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T10:00:37+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:12+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:13+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:14+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:38+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:39+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:40+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:01:41+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+ERR: 模板不存在:../App/Home/View/Trtr/l.html
+
+[ 2017-02-21T10:04:31+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+ERR: 模板不存在:../App/Home/View/Trtr/..html
+
+[ 2017-02-21T10:15:05+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T10:16:33+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html.html
+
+[ 2017-02-21T10:16:48+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html
+
+[ 2017-02-21T10:16:54+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+ERR: 模板不存在:../App/Home/View/./public/default/404.html
+
+[ 2017-02-21T10:18:34+08:00 ] 127.0.0.1 /dongshengsan/Code/Public/index.php?s=/trtr/productList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
