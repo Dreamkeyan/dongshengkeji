@@ -12,12 +12,12 @@
 <meta name="description" content="" />
 <meta name="Author" Content="" />
 <meta name="Copyright" Content="" />
-<link href="/dongshengsan/Code/Public/asset/home/css/main.css" rel="stylesheet" type="text/css" />
+<link href="/asset/home/css/main.css" rel="stylesheet" type="text/css" />
 
-<script src="/dongshengsan/Code/Public/asset/home/js/scroll-door.js" type="text/javascript"></script>
-<script src="/dongshengsan/Code/Public/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="/dongshengsan/Code/Public/asset/home/js/jquery.js" type="text/javascript"></script>
-<script src="/dongshengsan/Code/Public/asset/home/js/common.js" type="text/javascript"></script>
+<script src="/asset/home/js/scroll-door.js" type="text/javascript"></script>
+<script src="/asset/home/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/asset/home/js/jquery.js" type="text/javascript"></script>
+<script src="/asset/home/js/common.js" type="text/javascript"></script>
 <title>东升科技-产品介绍</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
 </script>
 
 
-		<div class="banner02"><img src="/dongshengsan/Code/Public/asset/home/images/banner04.jpg" width="973" height="149" /></div>
+		<div class="banner02"><img src="/asset/home/images/banner04.jpg" width="973" height="149" /></div>
 		<div class="topLogo"></div>
 	</div>
 	

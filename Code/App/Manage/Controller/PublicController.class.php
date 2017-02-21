@@ -56,7 +56,7 @@ class PublicController extends CommonController {
     	$imgTSize = explode('X', $imgtbSize[0]);
 
         $str = "";
-        $sto_url = get_url_path(C('CFG_UPLOAD_ROOTPATH')); 
+        $sto_url = (C('CFG_UPLOAD_ROOTPATH'));
         foreach ( $files as $file ) {   
         	$file = $sto_url. $file;     	
             $str .= $file . "ue_separate_ue";
@@ -118,7 +118,7 @@ class PublicController extends CommonController {
                 $new_info = array();
                 foreach ($info as $k => $v) {
 
-                	$v['url'] = get_url_path(C('CFG_UPLOAD_ROOTPATH')). $v['savepath']. $v['savename'];
+                	$v['url'] = (C('CFG_UPLOAD_ROOTPATH')). $v['savepath']. $v['savename'];
 
 	                //返回缩略图地址//$tb == 2
                 	if (!empty($imgTSize)) {
@@ -171,7 +171,7 @@ class PublicController extends CommonController {
         }else{  
         	$sfile = I('post.sfile', '', 'htmlspecialchars,trim');//判断其他子目录
             $info = empty($sfile)? $this->_uploadFile() : $this->_uploadFile($sfile);//获取附件信息
-          
+            
             if(isset($info) && is_array($info)){  
                 //写入数据库的自定义c方法  
 				if(!$this->_uploadData($info)){  
@@ -189,7 +189,7 @@ class PublicController extends CommonController {
                 $new_info = array();
                 foreach ($info as $k => $v) {
 
-                	$v['url'] = get_url_path(C('CFG_UPLOAD_ROOTPATH')). $v['savepath']. $v['savename'];
+                	$v['url'] = (C('CFG_UPLOAD_ROOTPATH')). $v['savepath']. $v['savename'];
 					$v['size'] 		= 	round($v['size']/1024,2);
 	                $new_info[] = $v;
                 }
@@ -433,8 +433,9 @@ class PublicController extends CommonController {
 
 
 		if($info = $upload->upload()) {
-				
-			return $info;		
+            //echo $info;
+			return $info;
+
 
 		}else {
 			

@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>后台管理</title>
-<script language="javascript" type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jquery-1.7.2.min.js"></script>
-<script src="/dongshengsan/Code/Public/asset/manage/js/frame.js" language="javascript" type="text/javascript"></script>
-<link href="/dongshengsan/Code/Public/asset/manage/css/frame.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/asset/manage/js/jquery-1.7.2.min.js"></script>
+<script src="/asset/manage/js/frame.js" language="javascript" type="text/javascript"></script>
+<link href="/asset/manage/css/frame.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 	function get_cate(){
 		$.get("<?php echo U('Index/getParentCate');?>",
@@ -30,7 +30,7 @@
 	get_cate();
 </script>
 <!--[if IE 6]>
-<script src="/dongshengsan/Code/Public/asset/manage/js/DD_belatedPNG_0.0.8a-min.js" language="javascript" type="text/javascript"></script>
+<script src="/asset/manage/js/DD_belatedPNG_0.0.8a-min.js" language="javascript" type="text/javascript"></script>
 <script>
   DD_belatedPNG.fix('.nav ul li a,.top_link ul li,background');   /* string argument can be any CSS selector */
 </script>
@@ -40,7 +40,7 @@
 <div class="pagemask"></div>
 <iframe class="iframemask"></iframe>
 <div class="head">
-<div class="top_logo"> <img src="/dongshengsan/Code/Public/asset/manage/images/main/logo.png" /> </div>
+<div class="top_logo"> <img src="/asset/manage/images/main/logo.png" /> </div>
      <div class="nav" id="nav">
       <ul>
       	<?php if(is_array($menu)): foreach($menu as $k=>$v): ?><li id="menu_<?php echo ($k); ?>"><a <?php if(empty($k)): ?>class="thisclass"<?php endif; ?> href="#" _for="left_menu_<?php echo ($k); ?>"><b><?php echo ($v["name"]); ?></b></a></li><?php endforeach; endif; ?>
