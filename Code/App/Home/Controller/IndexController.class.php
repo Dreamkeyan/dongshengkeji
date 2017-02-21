@@ -6,6 +6,7 @@ class IndexController extends HomeCommonController{
     
 	//方法：index
 	public function index(){
+        //echo alert("CFG_UPLOAD_ROOTPATH");
 	    header("Content-Type: text/html;charset=utf-8");
 	    //企业新闻
 	    $cid = M('category') -> where(array('name'=>'企业新闻'))->find(); 

@@ -10,7 +10,7 @@
         <!--
         var URL = '/dongshengsan/Code/Public/xyhai.php?s=/Public';
         var APP	 = '/dongshengsan/Code/Public/xyhai.php?s=';
-        var SELF='/dongshengsan/Code/Public/xyhai.php?s=/Public/browseFile/stype/picture&___t0.6072241700494514';
+        var SELF='/dongshengsan/Code/Public/xyhai.php?s=/Public/browseFile/spath/L3VwbG9hZHMvaW1nMQ%3D%3D/encodeflag/1/stype/picture';
         var PUBLIC='/dongshengsan/Code/Public/asset/manage';
         //-->
 </script>

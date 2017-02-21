@@ -119,6 +119,7 @@ class PublicController extends CommonController {
                 foreach ($info as $k => $v) {
 
                 	$v['url'] = get_url_path(C('CFG_UPLOAD_ROOTPATH')). $v['savepath']. $v['savename'];
+
 	                //返回缩略图地址//$tb == 2
                 	if (!empty($imgTSize)) {
 						$v['turl'] = get_picture($v['url'], $imgTSize[0], $imgTSize[1]);
@@ -335,7 +336,7 @@ class PublicController extends CommonController {
 		$upload->subName = array('date', 'Ymd');
 		$upload->maxSize = get_upload_maxsize();//设置上传文件大小		
 		$upload->exts = explode(',', C('CFG_UPLOAD_IMG_EXT'));//设置上传文件类型		
-		$upload->rootPath = C('CFG_UPLOAD_ROOTPATH');//上传根路径		
+		//$upload->rootPath = C('CFG_UPLOAD_ROOTPATH');//上传根路径
 		$upload->savePath ='img1/';//上传（子）目录
 		$upload->saveName = array('uniqid', '');//上传文件命名规则
 		$upload->replace = true; //存在同名是否覆盖
