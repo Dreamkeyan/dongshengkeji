@@ -895,7 +895,7 @@ function get_picture($str, $width = 0, $height = 0, $rnd = false) {
         $str = '';
     }
     if (empty($str)) {        
-        $str =  __ROOT__.'/uploads/system/nopic.png' ;
+        $str =  __ROOT__.'public/uploads/system/nopic.png' ;
         $ext = 'png';
         $ext_dest = 'png';
         $width = 0;
