@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
-<link rel='stylesheet' type="text/css" href="/dongshengsan/Code/Public/asset/manage/css/style.css" />
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/common.js"></script>
+<link rel='stylesheet' type="text/css" href="/asset/manage/css/style.css" />
+<script type="text/javascript" src="/asset/manage/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/asset/manage/js/common.js"></script>
  <script language="JavaScript">
         <!--
-        var URL = '/dongshengsan/Code/Public/xyhai.php?s=/Article';
-        var APP	 = '/dongshengsan/Code/Public/xyhai.php?s=';
-        var SELF='/dongshengsan/Code/Public/xyhai.php?s=/Article/index/pid/8';
-        var PUBLIC='/dongshengsan/Code/Public/asset/manage';
+        var URL = '/xyhai.php?s=/Article';
+        var APP	 = '/xyhai.php?s=';
+        var SELF='/xyhai.php?s=/Article/index/pid/31';
+        var PUBLIC='/asset/manage';
         //-->
         </script>
 </head>

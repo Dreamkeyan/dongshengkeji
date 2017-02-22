@@ -13,9 +13,9 @@
 	});
 </script>
 
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/login.js"></script>		
-<link rel="stylesheet" href="/dongshengsan/Code/Public/asset/manage/css/login.css" />
+<script type="text/javascript" src="/asset/manage/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/asset/manage/js/login.js"></script>		
+<link rel="stylesheet" href="/asset/manage/css/login.css" />
 </head>	
 <body>
 	<div class="login">

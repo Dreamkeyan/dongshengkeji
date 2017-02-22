@@ -3,18 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
-<link rel='stylesheet' type="text/css" href="/dongshengsan/Code/Public/asset/manage/css/style.css" />
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/common.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jquery.form.min.js"></script>
+<link rel='stylesheet' type="text/css" href="/asset/manage/css/style.css" />
+<script type="text/javascript" src="/asset/manage/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/asset/manage/js/common.js"></script>
+<script type="text/javascript" src="/asset/manage/js/jquery.form.min.js"></script>
 <script type="text/javascript" src="<?php echo U('Public/editor');?>"></script>
 <script type="text/javascript">
-	var data_path = "/dongshengsan/Code/Public/Data";
-	var tpl_public = "/dongshengsan/Code/Public/asset/manage";
+	var data_path = "/Data";
+	var tpl_public = "/asset/manage";
 </script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/jBox.config.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/asset/manage/js/calendar.config.js"></script>
-<script type="text/javascript" src="/dongshengsan/Code/Public/Data/static/jq_plugins/iColorPicker/iColorPicker.js"></script>
+<script type="text/javascript" src="/asset/manage/js/jBox.config.js"></script>
+<script type="text/javascript" src="/asset/manage/js/calendar.config.js"></script>
+<script type="text/javascript" src="/Data/static/jq_plugins/iColorPicker/iColorPicker.js"></script>
 <script type="text/javascript">
 $(function () {
 	//缩略图上传

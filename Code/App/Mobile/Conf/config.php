@@ -17,12 +17,12 @@ $config_base = array(
 	'HTML_CACHE_RULES' => get_meta_value('HTML_CACHE_RULES_COMMON'),
 
 
-	'VIEW_PATH'=>'./Public/'.MODULE_NAME .'/',
+	//'VIEW_PATH'=>'./Public/'.MODULE_NAME .'/',
 	'DEFAULT_THEME'  => get_cfg_value('CFG_MOBILE_THEMESTYLE'),//默认主题风格
 	'TMPL_PARSE_STRING' => array(
-		'__PUBLIC__' => __ROOT__. '/Public/'.MODULE_NAME. '/' . get_cfg_value('CFG_MOBILE_THEMESTYLE'),		
-		'__DATA__' => __ROOT__. '/Data',
-		'__AVATAR__' => __ROOT__. '/avatar',
+        '__PUBLIC__' => __ROOT__. '/asset/mobile',
+        '__DATA__' => __ROOT__. '/Data',
+        '__AVATAR__' => __ROOT__. '/avatar',
 	),
 
 );
